@@ -1,31 +1,16 @@
-/*<div id="parent">
-    <div id="child1">
-        <h1>im a h1 tag</h1>
-        <h1>im a h1 tag</h1>
-    </div>
-    <div id="child2">
-        <h1>im a h1 tag</h1>
-        <h1>im a h1 tag</h1>
-    </div>
-
-</div>*/
+import React from "react"
+import ReactDOM from "react-dom/client"
 
 
 
 
-
-
-
-const parent=React.createElement("div",
-    {id:"parent"},[ React.createElement("div",{id:"child1"},
-        [React.createElement("h1",{id:"heading"},"im a h1 tag",
-        React.createElement("h1",{id:"heading"},"im a h1 tag"))]), React.createElement("div",{id:"child1"},
-            [React.createElement("h1",{id:"heading"},"im a h1 tag",
-            React.createElement("h1",{id:"heading"},"im a h1 tag"))])]
-   );
-
-
-
-
+const Title=()=>(<h1>hello react</h1>)
+const titleelement=(<h1>hello react</h1>)
+const HeadingComponent=()=>
+    (<div id ="container">
+        <Title/>
+        {titleelement}
+        <h1>hello react1</h1>
+    </div>)
 const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(<HeadingComponent/>);
