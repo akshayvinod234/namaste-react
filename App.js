@@ -16,17 +16,29 @@ const Header=()=>(
         </div>
     </div>
 )
-const Restaurantcard=()=>(
+const Restaurantcard=(props)=>(
 <div className="res-card">
    
    <img className="res-card-img" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/17/18c780a6-b257-4c79-bfd4-1fe6d002fff9_240093.jpg"/>
-   <h3>Pizza Hut</h3>
+   <h3>{props.resName}</h3>
+   <h5>{props.cuisine}</h5>
+   <h5>{props.star}</h5>
+   <h5>{props.time}</h5>
+
    </div>
 )
 const Body=()=>(
     <div className="body">
      <div className="search">Search</div>
      <div className="res-container">
+         <Restaurantcard resName="Pizza Hut" cuisine="Pizza,North Indian,Asia" star="4.4" time="38 min"/>
+         <Restaurantcard resName="KFC" cuisine="Burger,Fast Food" star="4.3" time="21 min"/>
+         <Restaurantcard/>
+         <Restaurantcard/>
+         <Restaurantcard/>
+         <Restaurantcard/>
+         <Restaurantcard/>
+         <Restaurantcard/>
          <Restaurantcard/>
      </div>
     </div>
