@@ -33,8 +33,8 @@ const Body=()=>(
      <div className="res-container">
          <Restaurantcard resName="Pizza Hut" cuisine="Pizza,North Indian,Asia" star="4.4" time="38 min"/>
          <Restaurantcard resName="KFC" cuisine="Burger,Fast Food" star="4.3" time="21 min"/>
-         <Restaurantcard/>
-         <Restaurantcard/>
+         <Restaurantcard resName="biriyani" cuisine="Biriyani,Fast Food" star="4.3" time="11 min"/>
+         <Restaurantcard resName="chicking" cuisine="Fried Chiken,Fast Food" star="4.0" time="26 min"/>
          <Restaurantcard/>
          <Restaurantcard/>
          <Restaurantcard/>
