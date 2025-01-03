@@ -35,9 +35,9 @@ const Body=()=>(
          <Restaurantcard resName="KFC" cuisine="Burger,Fast Food" star="4.3" time="21 min"/>
          <Restaurantcard resName="biriyani" cuisine="Biriyani,Fast Food" star="4.3" time="11 min"/>
          <Restaurantcard resName="chicking" cuisine="Fried Chiken,Fast Food" star="4.0" time="26 min"/>
-         <Restaurantcard/>
-         <Restaurantcard/>
-         <Restaurantcard/>
+         <Restaurantcard resName="fried rice" cuisine="Fried Chiken,Fast Food" star="4.0" time="26 min"/>
+         <Restaurantcard resName="chicking" cuisine="Fried Chiken,Fast Food" star="4.0" time="26 min"/>
+         <Restaurantcard resName="chicking" cuisine="Fried Chiken,Fast Food" star="4.0" time="26 min"/>
          <Restaurantcard/>
          <Restaurantcard/>
      </div>
