@@ -24,12 +24,12 @@ const Restaurantcard=({resData})=>{
 <div className="res-card">
    
       
-   <img className="res-card-img" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+resData[0].info.cloudinaryImageId}/>
-   <h3>{resData[0].info.name}</h3>
-   <h5>{resData[0].info.cuisines.join(",")}</h5>
-   <h5>{resData[0].info.costForTwo}</h5>
-   <h5>{resData[0].info.avgRating}star</h5>
-   <h5>{resData[0].info.sla.deliveryTime}minutes</h5>
+   <img className="res-card-img" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+resData.info.cloudinaryImageId}/>
+   <h3>{resData.info.name}</h3>
+   <h5>{resData.info.cuisines.join(",")}</h5>
+   <h5>{resData.info.costForTwo}</h5>
+   <h5>{resData.info.avgRating}star</h5>
+   <h5>{resData.info.sla.deliveryTime}minutes</h5>
      
    </div>
     );
@@ -861,7 +861,7 @@ const Body=()=>(
     <div className="body">
      <div className="search">Search</div>
      <div className="res-container">
-         <Restaurantcard resData={resList}/>
+    { resList.map((restaurant)=>(<Restaurantcard key={restaurant.info.id} resData={restaurant}/>))}
      </div>
     </div>
 )
