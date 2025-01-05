@@ -1,8 +1,13 @@
 import resList from "../utils/mockData";
 import Restaurantcard from "./Restaurantcard";
 import {useState} from "react";
+import {useEffect} from "react";
 const Body=()=>{
     const [listOfRestaurant,setlistOfRestaurant]=useState(resList);
+    useEffect(()=>{console.log("use Effect")},[]);
+
+
+
     return(
     <div className="body">
      <div className="filter">
